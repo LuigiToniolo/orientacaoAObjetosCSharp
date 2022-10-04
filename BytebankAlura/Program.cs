@@ -17,15 +17,23 @@ conta2.numero_agencia = 22;
 conta2.nome_agencia = "Agencia central";
 conta2.saldo = 100;
 
-Console.WriteLine("Saldo da amanda pré-saque: " + conta2.saldo);
+Console.WriteLine("Saldo da Flávia pré-transferência: " + conta2.saldo);
+Console.WriteLine("Saldo do Luigi pré-transferência: " + conta1.saldo);
+conta1.Transferir(50, conta2); // --> Com isso, iremos transferir 50 reais para a flávia (conta2)
+bool transferencia = conta1.Transferir(50, conta2);
+Console.WriteLine("Transferência realizada com sucesso");
+Console.WriteLine("Saldo da Flávia pós-transferência: " + conta2.saldo);
+Console.WriteLine("Saldo do Luigi pós-transferência: " + conta1.saldo);
 
-bool saque = conta2.Sacar(50);
-Console.WriteLine("Saque realizado?" + saque);
+//Console.WriteLine("Saldo da amanda pré-saque: " + conta2.saldo);
 
-Console.WriteLine("Saldo da amanda pós-saque: " + conta2.saldo);
+//bool saque = conta2.Sacar(50);
+//Console.WriteLine("Saque realizado?" + saque);
 
-conta2.Depositar(230);
-Console.WriteLine("Saldo da Flávia pós-saque: " + conta2.saldo);
+//Console.WriteLine("Saldo da amanda pós-saque: " + conta2.saldo);
+
+//conta2.Depositar(230);
+//Console.WriteLine("Saldo da Flávia pós-saque: " + conta2.saldo);
 
 //conta1 = conta2; // --> Dessa forma vai dar "true" pois esses dois objetos apontam pro mesmo endereço de memória.
 

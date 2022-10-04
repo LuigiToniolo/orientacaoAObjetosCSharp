@@ -14,7 +14,7 @@ namespace BytebankAlura
 
         // ----- Criadno métodos, definindo o comportamento sacar para o componente:
 
-        public bool Sacar(double valor)
+        public bool Sacar(double valor) //--> Esse método bool retorna algum valor
         {
             if(saldo < valor)
             {
@@ -31,9 +31,31 @@ namespace BytebankAlura
             }
         }
 
-        public void Depositar(double valor)
+        public void Depositar(double valor) // --> O método void não retorna nada, só executa!
         {
-            saldo = saldo + valor;
+            if(valor < 0)
+            {
+                return;
+            }
+            saldo = saldo + valor;  
+        }
+
+        public bool Transferir(double valor, ContaCorrente destino)
+        {
+            if(saldo < valor)
+            {
+                return false;
+            }
+            if(valor < 0)
+            {
+                return false;
+            }
+            else
+            {
+                saldo = saldo - valor;
+                destino.saldo = destino.saldo + valor;
+                return true;
+            }
         }
     }
 }
