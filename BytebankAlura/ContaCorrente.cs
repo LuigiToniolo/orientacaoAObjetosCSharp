@@ -11,5 +11,24 @@ namespace BytebankAlura
         public int numero_agencia;
         public string nome_agencia;
         public double saldo;
+
+        // ----- Criadno métodos, definindo o comportamento sacar para o componente:
+
+        public bool Sacar(double valor)
+        {
+            if(saldo < valor)
+            {
+                return false;
+            }
+            if(valor < 0)
+            {
+                return false;
+            }
+            else
+            {
+                saldo = saldo - valor;
+                return true;
+            }
+        }
     }
 }

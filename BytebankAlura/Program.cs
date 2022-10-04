@@ -8,19 +8,22 @@ conta1.titular = "Luigi Toniolo";
 conta1.conta = "10123-X";
 conta1.numero_agencia = 23;
 conta1.nome_agencia = "Agencia central";
-conta1.saldo = 95.50;
+conta1.saldo = 100;
 
 ContaCorrente conta2 = new ContaCorrente();
-
-conta2.titular = "Luigi Toniolo";
-conta2.conta = "10123-X";
-conta2.numero_agencia = 23;
+conta2.titular = "Flávia Remédio";
+conta2.conta = "10299-X";
+conta2.numero_agencia = 22;
 conta2.nome_agencia = "Agencia central";
-conta2.saldo = 95.50;
+conta2.saldo = 100;
 
-conta1 = conta2;
+Console.WriteLine("Saldo da amanda pré-saque: " + conta2.saldo);
+conta2.Sacar(-50);
+Console.WriteLine("Saldo da amanda pós-saque: " + conta2.saldo);
 
-Console.WriteLine(conta1 == conta2); // --> Essa comparação vai dar falsa, mesmo que possuem os mesmos valores, pois estão em endereços de memórias diferentes.
+//conta1 = conta2; // --> Dessa forma vai dar "true" pois esses dois objetos apontam pro mesmo endereço de memória.
+
+///Console.WriteLine(conta1 == conta2); // --> Essa comparação vai dar falsa, mesmo que possuem os mesmos valores, pois estão em endereços de memórias diferentes.
 
 //Console.WriteLine("Titular: " + conta1.titular);
 //Console.WriteLine("Conta: " + conta1.conta);
