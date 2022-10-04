@@ -1,0 +1,15 @@
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\bin\Debug\net6.0\BytebankAlura.exe
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\bin\Debug\net6.0\BytebankAlura.deps.json
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\bin\Debug\net6.0\BytebankAlura.runtimeconfig.json
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\bin\Debug\net6.0\BytebankAlura.dll
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\bin\Debug\net6.0\BytebankAlura.pdb
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\obj\Debug\net6.0\BytebankAlura.csproj.AssemblyReference.cache
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\obj\Debug\net6.0\BytebankAlura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\obj\Debug\net6.0\BytebankAlura.AssemblyInfoInputs.cache
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\obj\Debug\net6.0\BytebankAlura.AssemblyInfo.cs
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\obj\Debug\net6.0\BytebankAlura.csproj.CoreCompileInputs.cache
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\obj\Debug\net6.0\BytebankAlura.dll
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\obj\Debug\net6.0\refint\BytebankAlura.dll
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\obj\Debug\net6.0\BytebankAlura.pdb
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\obj\Debug\net6.0\BytebankAlura.genruntimeconfig.cache
+C:\Users\Domvs\OneDrive\Documentos\Projetos\BytebankAlura\BytebankAlura\obj\Debug\net6.0\ref\BytebankAlura.dll
