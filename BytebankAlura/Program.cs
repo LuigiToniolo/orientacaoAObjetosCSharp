@@ -18,8 +18,14 @@ conta2.nome_agencia = "Agencia central";
 conta2.saldo = 100;
 
 Console.WriteLine("Saldo da amanda pré-saque: " + conta2.saldo);
-conta2.Sacar(-50);
+
+bool saque = conta2.Sacar(50);
+Console.WriteLine("Saque realizado?" + saque);
+
 Console.WriteLine("Saldo da amanda pós-saque: " + conta2.saldo);
+
+conta2.Depositar(230);
+Console.WriteLine("Saldo da Flávia pós-saque: " + conta2.saldo);
 
 //conta1 = conta2; // --> Dessa forma vai dar "true" pois esses dois objetos apontam pro mesmo endereço de memória.
 
