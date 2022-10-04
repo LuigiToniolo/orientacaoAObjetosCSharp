@@ -6,7 +6,7 @@ namespace BytebankAlura
 {
     public class ContaCorrente
     {
-        public string titular; //--> Podemos chamar isso de campo com variável
+        public Cliente titular;
         public string conta;
         public int numero_agencia;
         public string nome_agencia;

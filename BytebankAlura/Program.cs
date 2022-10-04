@@ -53,5 +53,9 @@ Console.WriteLine("Saldo do Luigi pós-transferência: " + conta1.saldo);
 //Console.WriteLine(conta1.saldo == saldo2);
 //Console.WriteLine(saldo == saldo2);
 
+Cliente cliente = new Cliente();
+cliente.nome = "Luigi Toniolo cliente";
+cliente.Cpf = "38012148853";
+cliente.profissao = "Programador C#";
 
 Console.ReadKey(); // --> Vai exibir as informações das variáveis e o console fica esperando a gente digitar alguma tecla para sair!
