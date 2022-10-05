@@ -1,29 +1,29 @@
 ﻿using BytebankAlura;
-
+using BytebankAlura.Titular;
 
 Console.WriteLine("Boas vindas a seu banco");
 
-ContaCorrente conta1 = new ContaCorrente(); // --> "Conta1" seria o objeto da classe ContaCorrente.
-conta1.titular = "Luigi Toniolo";
-conta1.conta = "10123-X";
-conta1.numero_agencia = 23;
-conta1.nome_agencia = "Agencia central";
-conta1.saldo = 100;
+//ContaCorrente conta1 = new ContaCorrente(); // --> "Conta1" seria o objeto da classe ContaCorrente.
+//conta1.titular = "Luigi Toniolo";
+//conta1.conta = "10123-X";
+//conta1.numero_agencia = 23;
+//conta1.nome_agencia = "Agencia central";
+//conta1.saldo = 100;
 
-ContaCorrente conta2 = new ContaCorrente();
-conta2.titular = "Flávia Remédio";
-conta2.conta = "10299-X";
-conta2.numero_agencia = 22;
-conta2.nome_agencia = "Agencia central";
-conta2.saldo = 100;
+//ContaCorrente conta2 = new ContaCorrente();
+//conta2.titular = "Flávia Remédio";
+//conta2.conta = "10299-X";
+//conta2.numero_agencia = 22;
+//conta2.nome_agencia = "Agencia central";
+//conta2.saldo = 100;
 
-Console.WriteLine("Saldo da Flávia pré-transferência: " + conta2.saldo);
-Console.WriteLine("Saldo do Luigi pré-transferência: " + conta1.saldo);
-conta1.Transferir(50, conta2); // --> Com isso, iremos transferir 50 reais para a flávia (conta2)
-bool transferencia = conta1.Transferir(50, conta2);
-Console.WriteLine("Transferência realizada com sucesso");
-Console.WriteLine("Saldo da Flávia pós-transferência: " + conta2.saldo);
-Console.WriteLine("Saldo do Luigi pós-transferência: " + conta1.saldo);
+//Console.WriteLine("Saldo da Flávia pré-transferência: " + conta2.saldo);
+//Console.WriteLine("Saldo do Luigi pré-transferência: " + conta1.saldo);
+//conta1.Transferir(50, conta2); // --> Com isso, iremos transferir 50 reais para a flávia (conta2)
+//bool transferencia = conta1.Transferir(50, conta2);
+//Console.WriteLine("Transferência realizada com sucesso");
+//Console.WriteLine("Saldo da Flávia pós-transferência: " + conta2.saldo);
+//Console.WriteLine("Saldo do Luigi pós-transferência: " + conta1.saldo);
 
 //Console.WriteLine("Saldo da amanda pré-saque: " + conta2.saldo);
 
@@ -53,9 +53,31 @@ Console.WriteLine("Saldo do Luigi pós-transferência: " + conta1.saldo);
 //Console.WriteLine(conta1.saldo == saldo2);
 //Console.WriteLine(saldo == saldo2);
 
-Cliente cliente = new Cliente();
-cliente.nome = "Luigi Toniolo cliente";
-cliente.Cpf = "38012148853";
-cliente.profissao = "Programador C#";
+//Cliente cliente = new Cliente();
+//cliente.nome = "Luigi Toniolo";
+//cliente.Cpf = "38012144444";
+//cliente.profissao = "Programador front-end";
+
+ContaCorrente conta3 = new ContaCorrente();
+
+conta3.titular = new Cliente();
+
+conta3.titular.nome = "Luigi Toniolo";
+conta3.titular.Cpf = "38012144444";
+conta3.titular.profissao = "Programador front-end";
+
+conta3.conta = "213445-X";
+conta3.numero_agencia = 35;
+conta3.nome_agencia = "Agencia central";
+
+//Console.WriteLine(conta3.titular.nome);
+
+if(conta3.titular == null)
+{
+    Console.WriteLine("O campo titular está nulo");
+} else
+{
+    Console.WriteLine("O campo é: " + conta3.titular.nome + "E o CPF é: " + conta3.titular.Cpf);
+}
 
 Console.ReadKey(); // --> Vai exibir as informações das variáveis e o console fica esperando a gente digitar alguma tecla para sair!

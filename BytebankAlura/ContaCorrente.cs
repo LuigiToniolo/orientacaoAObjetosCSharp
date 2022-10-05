@@ -1,5 +1,6 @@
 ﻿//Criando nossa primeira classe:
 
+using BytebankAlura.Titular;
 using System.Runtime.InteropServices;
 
 namespace BytebankAlura
