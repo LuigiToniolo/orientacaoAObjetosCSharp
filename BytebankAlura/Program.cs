@@ -58,26 +58,38 @@ Console.WriteLine("Boas vindas a seu banco");
 //cliente.Cpf = "38012144444";
 //cliente.profissao = "Programador front-end";
 
-ContaCorrente conta3 = new ContaCorrente();
+//ContaCorrente conta3 = new ContaCorrente();
 
-conta3.titular = new Cliente();
+//conta3.titular = new Cliente();
 
-conta3.titular.nome = "Luigi Toniolo";
-conta3.titular.Cpf = "38012144444";
-conta3.titular.profissao = "Programador front-end";
+//conta3.titular.nome = "Luigi Toniolo";
+//conta3.titular.Cpf = "38012144444";
+//conta3.titular.profissao = "Programador front-end";
 
-conta3.conta = "213445-X";
-conta3.numero_agencia = 35;
-conta3.nome_agencia = "Agencia central";
+//conta3.conta = "213445-X";
+//conta3.numero_agencia = 35;
+//conta3.nome_agencia = "Agencia central";
 
 //Console.WriteLine(conta3.titular.nome);
 
-if(conta3.titular == null)
-{
-    Console.WriteLine("O campo titular está nulo");
-} else
-{
-    Console.WriteLine("O campo é: " + conta3.titular.nome + "E o CPF é: " + conta3.titular.Cpf);
-}
+//if(conta3.titular == null)
+//{
+//    Console.WriteLine("O campo titular está nulo");
+//} else
+//{
+//    Console.WriteLine("O campo é: " + conta3.titular.nome + "E o CPF é: " + conta3.titular.Cpf);
+//}
+Cliente sarah = new Cliente();
+sarah.Nome = "Sarah Silva";
+
+ContaCorrente conta4 = new ContaCorrente(235, "123456-X");
+conta4.Saldo = 150;
+conta4.Titular = sarah;
+
+Console.WriteLine($"O saldo é: R$ {String.Format("{0:0.00}", conta4.Saldo)}");
+Console.WriteLine(conta4.Titular.Nome);
+Console.WriteLine(conta4.Numero_agencia);
+Console.WriteLine(conta4.Conta);
+
 
 Console.ReadKey(); // --> Vai exibir as informações das variáveis e o console fica esperando a gente digitar alguma tecla para sair!
