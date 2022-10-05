@@ -79,17 +79,49 @@ Console.WriteLine("Boas vindas a seu banco");
 //{
 //    Console.WriteLine("O campo é: " + conta3.titular.nome + "E o CPF é: " + conta3.titular.Cpf);
 //}
+
+//Cliente sarah = new Cliente();
+//sarah.Nome = "Sarah Silva";
+
+//ContaCorrente conta4 = new ContaCorrente(235, "123456-X");
+//conta4.Saldo = 150;
+//conta4.Titular = sarah;
+
+//Console.WriteLine($"O saldo é: R$ {String.Format("{0:0.00}", conta4.Saldo)}");
+//Console.WriteLine(conta4.Titular.Nome);
+//Console.WriteLine(conta4.Numero_agencia);
+//Console.WriteLine(conta4.Conta);
+
+//ContaCorrente conta5 = new ContaCorrente(235, "123456-X");
+//conta5.TotalDeContasCriadas = 1;
+
+//ContaCorrente conta6 = new ContaCorrente(335, "133434-X");
+//conta6.TotalDeContasCriadas += 1;
+
+//Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+
+//Console.WriteLine(conta5.TotalDeContasCriadas);
+//Console.WriteLine(conta6.TotalDeContasCriadas);
+
+
 Cliente sarah = new Cliente();
 sarah.Nome = "Sarah Silva";
+sarah.Profissao = "Professora";
+sarah.Cpf = "11111111-12";
 
-ContaCorrente conta4 = new ContaCorrente(235, "123456-X");
-conta4.Saldo = 150;
-conta4.Titular = sarah;
+Cliente ester = new Cliente();
+ester.Nome = "Ester Almeida";
+ester.Profissao = "Advogada";
+ester.Cpf = "868524125-32";
 
-Console.WriteLine($"O saldo é: R$ {String.Format("{0:0.00}", conta4.Saldo)}");
-Console.WriteLine(conta4.Titular.Nome);
-Console.WriteLine(conta4.Numero_agencia);
-Console.WriteLine(conta4.Conta);
+Console.WriteLine("Total de clientes: " + Cliente.TotalClientesCadastrados);
 
+ContaCorrente contaAndre = new ContaCorrente(159, "152869-x");
+contaAndre.Titular = new Cliente();
+contaAndre.Titular.Nome = " André Pereira";
+contaAndre.Titular.Profissao = "Auxiliar Administrativo";
+contaAndre.Saldo = 100;
+
+Console.WriteLine("Total de clientes: " + Cliente.TotalClientesCadastrados);
 
 Console.ReadKey(); // --> Vai exibir as informações das variáveis e o console fica esperando a gente digitar alguma tecla para sair!
